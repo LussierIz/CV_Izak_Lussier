@@ -1,5 +1,18 @@
 $(document).ready(() => {
-    let timeoutId; 
+    let timeoutId;
+    let boolMode = false;
+    
+    $("#switch-mode").on('change', () => {
+        if (boolMode) {
+            // Switch to light mode
+            $("body").removeClass("dark-mode");
+            boolMode = false;
+        } else {
+            // Switch to dark mode
+            $("body").addClass("dark-mode");
+            boolMode = true;
+        }
+    });
 
     // Afficher le menu au survol du hamburger
     $(".hamburger-menu").mouseenter(() => {
