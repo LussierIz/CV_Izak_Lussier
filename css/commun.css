@@ -36,11 +36,11 @@ body {
 
 .hamburger-menu {
     font-size: 40px;
-    cursor: pointer;
+    cursor: default;
     transition: transform 0.5s ease-in-out, font-size 0.3s ease-in-out;
 }
 
-.hamburger-container:hover .hamburger-menu {
+.hamburger-menu.active {
     transform: rotate(-90deg);
 }
 
@@ -62,9 +62,13 @@ body {
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.hamburger-container:hover .dropdown-menu {
+.dropdown-menu.active {
     opacity: 1;
     transform: translateY(0);
+}
+
+.dropdown-menu.active li button {
+    cursor: pointer;
 }
 
 .dropdown-menu li {
@@ -75,7 +79,6 @@ body {
 .dropdown-menu li button {
     color: white;
     width: 100%;
-    cursor: pointer;
     background-color: rgb(23, 6, 37);
     font-family: inherit;
     border: none; 
