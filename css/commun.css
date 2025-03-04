@@ -199,3 +199,21 @@ body {
   border-radius: 8px;
   border: 3px solid var(--text-color);
 }
+
+.sous-section h3 {
+  margin: 8px;
+}
+
+.sous-section p {
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #ff0000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

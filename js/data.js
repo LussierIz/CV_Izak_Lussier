@@ -1,6 +1,17 @@
 $(document).ready(() => {
     let timeoutId;
     let boolMode = false;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if(entry.isIntersecting){entry.target.classList.add("show");}
+            else {entry.target.classList.remove("show");}
+        });
+    });
+
+    $(".hidden").each(function() {
+        observer.observe(this);
+    });
     
     $("#switch-mode").on('change', () => {
         if (boolMode) {
