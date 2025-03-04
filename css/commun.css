@@ -112,11 +112,15 @@ body {
 /******************************** Toggle switch ********************************/
 
 .switch-location {
-    position: fixed;
-    bottom: 10%;
-    right: 50%;
-    transform: translateX(50%);
-    z-index: 1000;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.switch-location p {
+  font-size: 1.2rem;
 }
 
 .switch {

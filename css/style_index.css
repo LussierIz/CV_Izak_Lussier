@@ -62,10 +62,12 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .projets h2 {
     margin: 30px;
+    font-size: 2rem;
 }
 
 .carte-conteneur {
@@ -118,4 +120,12 @@
 .carte-description {
     height: 100%;
     margin: 8px;
+}
+
+.competences h2 {
+    font-size: 2rem;
+}
+
+.parcours h2 {
+    font-size: 2rem;
 }
